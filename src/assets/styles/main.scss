@@ -1,7 +1,5 @@
-/**
- * Use this file to import partials.
- * Do not include SCSS code in this file.
- */
+@tailwind base;
+@tailwind components;
 
 /**
  * Import variables
@@ -24,7 +22,23 @@
  */
 
 @import "layouts/home";
+@import "npm:@fortawesome/fontawesome-free/css/all.css";
 
-/**
- * Do NOT include anything else in this file!
- */
+ @layer components{
+
+ .link{
+     @apply text-lg border-4 border-black bg-gray-300 text-black hover:bg-yellow-400 hover:text-gray-600 px-4 py-2 rounded-md font-medium transition duration-500
+ }
+ .link-2{
+    @apply text-sm border-2 border-black bg-gray-300 text-black hover:bg-yellow-400 hover:text-gray-600 px-4 py-2 rounded-md font-medium transition duration-500
+}
+ .perro{
+     @apply text-blue-500;
+ }
+.texto_grande{
+    @apply text-gray-800 text-xl pb-8;
+}
+}
+
+
+ @tailwind utilities;

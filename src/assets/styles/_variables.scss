@@ -1,12 +1,40 @@
 @use "sass:color";
 
-$font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-  "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
-  "Segoe UI Symbol";
-$font-family-serif: "Georgia", "Times New Roman", serif;
+$font-family: 'Nunito', sans-serif;
+$font-family2:'Underdog', sans-serif;
+$font-family3: 'Leckerli One', cursive;
+$font-color: #d6d6e4;
+$font-color2: #202026;
 
-$uoc-corporate: #000078;
-$uoc-masterbrand: #73edff;
-$uoc-bg: color.scale($uoc-masterbrand, $lightness: 70%);
+.body{
+    background-color: rgb(249, 140, 140);
+}
 
-$mqMinWidth: 420px;
+.h1{
+    font-family:$font-family3;
+    text-align:center;
+    font-size: 3.3rem;
+    color:$font-color;
+}
+
+.h2{
+    font-family: $font-family;
+    font-size: 3rem;
+    text-align: center;
+    color: $font-color2;
+    font-weight: bold;
+    padding-top: 4vh;
+    padding-bottom: 4vh;
+}
+
+.contact{
+    color:$font-color;
+    text-decoration: none;
+    font-size: 30px;
+    padding-right: 3vw;
+}
+
+lista-navegador__item {
+        display:inline-block;
+        padding: 1vw;
+    }

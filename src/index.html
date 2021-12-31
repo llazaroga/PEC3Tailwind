@@ -1,26 +1,238 @@
 <!DOCTYPE html>
 
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
-    <title>UOC Boilerplate</title>
-  </head>
-  <body>
-    <div class="uoc-container">
-      <picture>
-        <source srcset="./assets/images/logo.png?as=webp&width=350" type="image/webp" />
-        <img src="./assets/images/logo.png?width=350" alt="test image" />
-      </picture>
-      <h1 class="uoc-title">Hello, UOC!</h1>
-      <p>
-        This is a starter template for the Advanced HTML and CSS Tools courses
-        from the Master's Program in Multimedia Applications and the Master's
-        Program in Web App and Website Development at the Universitat Oberta de
-        Catalunya.
-      </p>
-    </div>
-    <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
-  </body>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="icon" href="./assets/images/favicon2.png" type="image/png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Leckerli+One&family=Nunito:wght@200&family=Underdog&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
+  <title>Miembros</title>
+</head>
+
+<body class="body">
+  <header>
+
+    <div class="cabecera-1">
+      <nav class="md:hidden xs:hidden xxs:hidden lg:grid grid-cols-3 bg-gray-800 items-center">
+        <div class="logo w-4/5">
+          <img src="./assets/images/logo_teatre2.png" alt="logo teatro">
+        </div>
+        <div class="block content-center w-full mx-auto">
+          <h1 class="h1 lg:text-5xl">Teatro perruno</h1>
+        </div>
+        <div class="links">
+          <ul class="flex items-center gap-3 pr-3 lg:float-right">
+            <li><a href="#" class="link">Portada</a></li>
+            <li><a href="#" class="link">Articulos</a></li>
+            <li><a href="contacto.html" class="link">Reserva</a></li>
+          </ul>
+        </div>
+      </nav>
+
+
+      <div class="cabecera-2">
+        <nav class="xxs:grid grid-cols-1  bg-gray-800 gap-5 lg:hidden">
+          <div class="logo flex content-center mx-auto pt-3">
+            <img src="./assets/images/favicon2.png" alt="logo teatro">
+          </div>
+          <div>
+            <h1 class="h1">Teatro perruno</h1>
+          </div>
+          <div class="links bg-gray-800 p-6 mx-auto">
+            <ul class="flex sm:gap-10 xs:gap-5">
+              <li><a href="#" class="link-2">Portada</a></li>
+              <li><a href="#" class="link-2">Articulos</a></li>
+              <li><a href="contacto.html" class="link-2">Reserva</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+
+  </header>
+  <main class="main">
+
+    <h2 class="h2">Los personajes</h2>
+
+    <div class="grid grid-cols-1 gap-6 items-center justify-center p-8 xs:grid-cols-2 lg:grid-cols-3">
+
+      <figure class=" bg-gray-100 rounded-md border-4 border-red-500">
+        <img class=" w-1/2 h-5/7 mx-auto pt-3" src="./assets/images/gongsu2.png"
+          alt="Imagen de Gongsun Chujiu, el amigo de Zhao">
+        <div class="pt-6 md:p-8 text-center space-y-4">
+          <blockquote>
+            <p class="text-lg font-bold">
+              Gongsun Chujiu
+            </p>
+          </blockquote>
+          <figcaption class="font-medium">
+            <div class="text-gray-800">
+              El fiel amigo de familia Zhao.
+            </div>
+            <div class="perro">
+              Representado por <b>Drac</b>
+            </div>
+          </figcaption>
+        </div>
+      </figure>
+
+      <figure class=" bg-gray-100 rounded-md border-4 border-red-500">
+        <img class=" w-1/2 h-5/7 mx-auto pt-3" src="./assets/images/zhao2.png"
+          alt="Imagen de Zhao Suo/Cheng Po, el huérfano">
+        <div class="pt-6 md:p-8 text-center space-y-4">
+          <blockquote>
+            <p class="text-lg font-bold">
+              Zhao Suo/Cheng Po
+            </p>
+          </blockquote>
+          <figcaption class="font-medium">
+            <div class="text-gray-800">
+              El huérfano de los Zhao.
+            </div>
+            <div class="perro">
+              Representado por <b>Bimbo</b>
+            </div>
+          </figcaption>
+        </div>
+      </figure>
+
+      <figure class=" bg-gray-100 rounded-md border-4 border-red-500">
+        <img class=" w-1/2 h-5/7 mx-auto pt-3" src="./assets/images/tuangu2.png" alt="Imagen de Tu'an Ku, el malvado">
+        <div class="pt-6 md:p-8 text-center space-y-4">
+          <blockquote>
+            <p class="text-lg font-bold">
+              Tu'an Ku
+            </p>
+          </blockquote>
+          <figcaption class="font-medium">
+            <div class="text-gray-800">
+              El malvado que odia los Zhao.
+            </div>
+            <div class="perro">
+              Representado por <b>Blacky</b>
+            </div>
+          </figcaption>
+        </div>
+      </figure>
+
+      <figure class=" bg-gray-100 rounded-md border-4 border-red-500">
+        <img class=" w-1/2 h-5/7 mx-auto pt-3" src="./assets/images/chengyin2.png"
+          alt="Imagen de Cheng Ying, el médico">
+        <div class="pt-6 md:p-8 text-center space-y-4">
+          <blockquote>
+            <p class="text-lg font-bold">
+              Cheng Ying
+            </p>
+          </blockquote>
+          <figcaption class="font-medium">
+            <div class="text-gray-800">
+              El médico.
+            </div>
+            <div class="perro">
+              Representado por <b>Freya</b>
+            </div>
+          </figcaption>
+        </div>
+      </figure>
+
+      <figure class=" bg-gray-100 rounded-md border-4 border-red-500">
+        <img class=" w-1/2 h-5/7 mx-auto pt-3" src="./assets/images/hanjue2.png" alt="Imagen de Han Jue, el guerrero">
+        <div class="pt-6 md:p-8 text-center space-y-4">
+          <blockquote>
+            <p class="text-lg font-bold">
+              Han Jue
+            </p>
+          </blockquote>
+          <figcaption class="font-medium">
+            <div class="text-gray-800">
+              El guerrero.
+            </div>
+            <div class="perro">
+              Representado por <b>Gaia</b>
+            </div>
+          </figcaption>
+        </div>
+      </figure>
+
+      <figure class=" bg-gray-100 rounded-md border-4 border-red-500">
+        <img class=" w-1/2 h-5/7 mx-auto pt-3" src="./assets/images/princess2.png"
+          alt="Imagen de la princesa, madre de Zhao Suo">
+        <div class="pt-6 md:p-8 text-center space-y-4">
+          <blockquote>
+            <p class="text-lg font-bold">
+              Princesa
+            </p>
+          </blockquote>
+          <figcaption class="font-medium">
+            <div class="text-gray-800">
+              La madre de Zhao.
+            </div>
+            <div class="perro">
+              Representado por <b>Musa</b>
+            </div>
+          </figcaption>
+        </div>
+      </figure>
+  </main>
+
+  <footer class="footer">
+    <div class="">
+      <nav class="grid grid-cols-1 bg-gray-800 items-center lg:grid-cols-3">
+        <div class="logo w-4/5 lg:block hidden">
+          <img src="./assets/images/logo_teatre2.png" alt="logo teatro">
+        </div>
+        <div class="logo block w-4/5 lg:hidden content-center mx-auto py-3">
+          <img class="mx-auto" src="./assets/images/favicon2.png" alt="logo teatro">
+        </div>
+
+        <div class="links bg-gray-800 p-6 content-center mx-auto">
+          <ul class="flex items-center sm:gap-10 xs:gap-5">
+            <li><a href="#" class="link-2">Portada</a></li>
+            <li><a href="#" class="link-2">Articulos</a></li>
+            <li><a href="contacto.html" class="link-2">Reserva</a></li>
+          </ul>
+        </div>
+
+        <div class="redes_sociales xs:w-1/6 lg:w-4/5 float-right ml-auto py-2">
+          <ul class="lista-navegador grid grid-cols-3 xs:pr-1 lg:pr-5 pl-0 list-none text-right m-0">
+
+            <li class="lista-navegador__item">
+
+              <a href="https://www.instagram.com/lulalu_designs/?hl=es" class="contact">
+
+                <i class="fab fa-instagram-square"></i>
+
+              </a>
+            </li>
+
+            <li class="lista-navegador__item">
+
+              <a href="#" class="contact">
+
+                <i class="fab fa-linkedin"></i>
+
+              </a>
+
+            </li>
+            <li class="lista-navegador__item">
+              <a class="contact" href="#">
+                <i class="fas fa-envelope-square"></i>
+              </a>
+            </li>
+
+          </ul>
+        </div>
+      </nav>
+  </footer>
+
+
+
+
+  <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
+</body>
+
 </html>
