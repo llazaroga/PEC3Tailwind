@@ -27,16 +27,16 @@
  @layer components{
 
  .link{
-     @apply text-lg border-4 border-black bg-gray-300 text-black hover:bg-yellow-400 hover:text-gray-600 px-4 py-2 rounded-md font-medium transition duration-500
+     @apply text-lg font-undog border-4 border-negro bg-blanco text-negro hover:bg-amarillo hover:text-gris2 px-4 py-2 rounded-md font-medium transition duration-500
  }
  .link-2{
-    @apply text-sm border-2 border-black bg-gray-300 text-black hover:bg-yellow-400 hover:text-gray-600 px-4 py-2 rounded-md font-medium transition duration-500
+    @apply text-sm border-2 font-undog border-negro bg-blanco text-negro hover:bg-amarillo hover:text-gris2 px-4 py-2 rounded-md font-medium transition duration-500
 }
  .perro{
-     @apply text-blue-500;
+     @apply text-azul;
  }
 .texto_grande{
-    @apply text-gray-800 text-xl pb-8;
+    @apply text-gris text-xl pb-8 font-bold lg:text-3xl;
 }
 }
 
